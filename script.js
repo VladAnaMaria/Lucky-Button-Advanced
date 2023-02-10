@@ -1,4 +1,4 @@
-var numberOfButtons, discount;
+let numberOfButtons, discount, winNumber;
 function verifynumberOfButtons() {
     numberOfButtons = document.getElementById("myNumber").value;
     if (numberOfButtons < 3 || numberOfButtons > 9) {
@@ -9,15 +9,12 @@ function verifynumberOfButtons() {
     discount = numberOfButtons * 10;
     return 1;
 }
-var winNumber;
-function getWinNumber() {
-    winNumber = Math.floor(Math.random() * numberOfButtons + 1);
-}
+
 function createButtons() {
     if (verifynumberOfButtons() == 0) {
         return;
     }
-    getWinNumber();
+    winNumber = Math.floor(Math.random() * numberOfButtons + 1);
     for (let i = 1; i <= numberOfButtons; ++i) {
         let button = document.createElement("button");
         button.innerHTML = "Try me!";
