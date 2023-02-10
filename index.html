@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Lucky Button Advanced</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card text-bg-info text-center mb-3" style="max-width: 30rem;">
+            <div class="card-header">Thank you for shopping with us!</div>
+            <div class="card-body">
+                <h5 class="card-title">Let's have fun and win discount codes</h5>
+                <p class="card-text">Write in the box below a number between 3 and 9 and test your luck! Choose one of
+                    the generated buttons and you will win a discount code. The discount increases with the number
+                    entered, so it's worth the risk!</p>
+                <p class="card-text"><input id="myNumber" placeholder="write a number here">
+                    <button type="button" class="btn btn-dark" onclick="createButtons()" id="start">Start</button></p>
+                <div id="showbuttons" class="btn-group-vertical" role="group" aria-label="Vertical button group"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
